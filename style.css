@@ -1,0 +1,253 @@
+*{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.outer-main-container
+{
+    width: 100%;
+    height: auto;
+}
+/* nav bar  or section-1-------------------------- */
+.section-1
+{
+    width: 100%;
+    height:740px;
+    background: url("photos/Star6_23_101723_DSC_6184_desktop_8765fb12d8.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.nav-container a
+{
+text-decoration: none;
+color: white;
+font-weight: 700;
+font-size: 14px;
+
+}
+#shop
+{
+
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#logo
+{
+    width: 180px;
+
+}
+#Menu-bar-img
+{
+    width: 16px;
+    background-color: transparent;
+}
+.nav-contents a
+{
+    
+    position: relative;
+    display: inline-block;
+    
+}
+.nav-contents a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffff; /* Change this to the color you want for the underline */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Adjust the transition duration as needed */
+}
+.nav-contents a:hover::before {
+    width: 100%;
+}
+/* right-side-bar------------------- */
+.right-side-bar
+{
+    height: 700px;
+    width: 320px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    z-index:2;
+}
+.right-content
+{
+    width: 100%;
+    height: auto;
+    margin-top:4px;
+    text-align: end;
+    padding-right: 10px;
+    
+    
+}
+.right-content ul
+{
+    list-style-type:none;
+}
+.right-side-bar a
+{
+    text-decoration: none;
+    color: #ffffffff;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+.right-side-bar  hr{
+    color: rgb(102, 110, 116);
+}
+
+
+.mobile-content
+{
+  visibility: hidden;
+  position: relative;
+  top:-331px;
+ 
+}
+.web-content
+{
+    visibility: initial;
+}
+
+/* Section-2----------------------------------------------- */
+.section-2
+{
+    width: 100%;
+    height:740px;
+    background: url("photos/Psyche_outside39abmound_IMG_8486_desktop_f5072ad69b.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+/* Section-3----------------------------------------------- */
+.section-3
+{
+    width: 100%;
+    height:740px;
+    background: url("photos/Crew_6_Desktop_9857f5c2f0.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+/* Section-4----------------------------------------------- */
+.section-4
+{
+    width: 100%;
+    height:740px;
+    background: url("photos/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+/* meadia quary----------------------- */
+@media(max-width:900px)
+{
+    .mobile-content
+{
+  visibility: visible;
+  
+}
+.web-content
+{
+  visibility:hidden;
+}
+.nav-contents
+{
+    display: none;
+}
+#logo
+{
+    position: relative;
+    top: 10px;
+    left: 105px;
+    z-index: 3;
+}
+.section-1,.section-2,.section-3,.section-4
+{
+    height: 500px;
+}
+
+}
+/* rotation----------------- */
+@keyframes rotateButton {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* button-------------------- */
+
+
+.section-inner a{
+    animation: fadeInUp 0.5s ease-in-out 0.4s;
+    animation-fill-mode: both;
+}
+
+
+
+
+.btn1 {
+
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    min-width: 130px;
+    padding: 15px 50px;
+    margin-top: 10px;
+    border: solid 2px #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 2;
+    text-decoration: none;
+   
+}
+.btn1 span
+{
+ color: #fff;
+}
+
+
+
+.btn1:hover span{
+    color:#000;
+}
+
+.btn1 .hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn1:hover .hover{
+    transform: translateY(0);
+    
+}
